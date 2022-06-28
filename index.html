@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Red neuronal - Sanurb</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+	<link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="description">
+            <h1>Colores Accesibles</h1>
+            <p class="paragraph">Esta herramienta de IA te muestra que color deberia ir en su texto dado un color de fondo determinado.
+                Tratando de seguir las pautas establecidas por la W3C, nuestro objetivo es hacer que el texto
+                sea legible incluso para alguien con una visión de 20/40, que es equivalente a la visión
+                de una persona de 80 años.
+            </p>
+            <label for="color-picker">Color de fondo:</label>
+            <input data-jscolor="{value:'#CC66FF'}", onInput="update(this.jscolor)">
+        </div>
+
+        <section class="main-content">
+            <div class="color-text" id="color-text">
+                El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja
+            </div>
+        </section>
+    </div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"></script>
+	<script src="https://unpkg.com/brain.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
